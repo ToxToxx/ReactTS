@@ -4,11 +4,11 @@ import axios, { AxiosError } from "axios"
 
 export function useProducts(){
     const [products, setProducts] = useState<IProduct[]>([])
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(' ')
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(' ')
 
-  async function fetchProducts(){
-    try {
+    async function fetchProducts(){
+     try {
       setError('')   
       setLoading(true)
       const response = 
